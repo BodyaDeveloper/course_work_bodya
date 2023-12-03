@@ -1,0 +1,96 @@
+.contact_header{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: sans-serif Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.contact_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+}
+
+.form_wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 600px;
+    gap: 18px;
+}
+
+.form{
+    border: solid white 4px;
+    border-radius: 10px;
+    padding: 26px;
+}
+
+.form_field{
+    padding: 20px 0;
+    /*padding: 40px;*/
+}
+
+.form_content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-text{
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    opacity: 50%;
+}
+
+hr{
+    width: 550px;
+    height: 4px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Add a border */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    resize: none;
+    height: 260px;
+    background-color: #ffffff; /* Set a white background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+.comment-input::placeholder {
+    color: rgba(0, 0, 0, 0.40);
+    font-family: sans-serif Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.area_button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.button_contact{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+}

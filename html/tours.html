@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tours</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="logo"><img src="../public/logo.png" alt="logo"></div>
+    <nav>
+        <ul class="flex ref_container">
+            <li><a href="home.html" class="header_text" >Home</a></li>
+            <li><a href="aboutus.html" class="header_text">About Us</a></li>
+            <li><a href="tours.html" class="header_text" style="text-decoration: underline">Tours</a></li>
+            <li><a href="contact.html" class="header_text">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="header_button"><small class="header_button_text">Sign up</small></button>
+</header>
+<main id="bigEl" style="display: flex; flex-direction: column">
+    <h2 class="header_tour">Top Destinations</h2>
+    <div class="des_lis">
+    <div class="destination">
+        <img src="../public/rio.svg" alt="Rio de Janeiro">
+        <div class="tour-price">
+            <h3>Rio de Janeiro, Brazil</h3>
+            <div class="price-duration">
+                <p>$4,650</p>
+                <p>14 days</p>
+            </div>
+        </div>
+        <div class="find-out-button">Find out</div>
+    </div>
+    <div class="destination destination_selected">
+        <img src="../public/yangon.svg" alt="Yangon, Myanmar">
+        <div class="tour-price">
+        <h3>Yangon, Myanmar</h3>
+            <div class="price-duration">
+                <p>$3,900</p>
+                <p>7 days</p>
+            </div>
+        </div>
+        <div class="find-out-button">Find out</div>
+    </div>
+    <div class="destination">
+        <img src="../public/madagascar.svg" alt="Madagascar">
+        <div class="tour-price">
+        <h3>Africa, Madagascar</h3>
+            <div class="price-duration">
+        <p>$2,950</p>
+        <p>14 days</p>
+            </div>
+        </div>
+        <div class="find-out-button">Find out</div>
+    </div>
+    </div>
+    <div id= "pagination" class="pagination_style">
+    </div>
+</main>
+</body>
+<script>
+    let bigEl = document.getElementById('pagination');
+
+    for (let i = 0; i < 7; i++) {
+        let el = document.createElement("div");
+        el.className = 'pagination_icon';
+
+        if (i === 3) {
+            el.classList.add('pagination_active');
+        }
+
+        bigEl.appendChild(el);
+    }
+</script>
+</html>

@@ -1,0 +1,87 @@
+@import "home.css";
+@import "aboutus.css";
+@import "contact.css";
+@import "tour.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+.wrapper{
+    height: 100vh;
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 120px;
+    overflow-y: hidden;
+}
+
+.header_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.header_button{
+    width: 140px;
+    height: 44px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header_button_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.flex{
+    display: flex;
+    row-gap: 20px;
+}
+
+.ref_container li{
+    margin: 0 20px;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.button{
+    width: 280px;
+    height: 80px;
+    border-radius: 10px;
+    background: #E47575;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header_button:hover{
+    color: white;
+    border-color: white;
+}
+
